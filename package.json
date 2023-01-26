@@ -1,0 +1,31 @@
+{
+  "name": "aceva-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@next/font": "13.1.1",
+    "@portabletext/react": "^2.0.0",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^4.0.1",
+    "@sanity/image-url": "^1.0.2",
+    "axios": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "moment": "^2.29.4",
+    "next": "13.1.1",
+    "next-sanity": "^4.1.1",
+    "react": "18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "swiper": "^8.4.5"
+  }
+}
