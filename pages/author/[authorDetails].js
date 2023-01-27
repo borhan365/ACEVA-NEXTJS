@@ -44,7 +44,7 @@ function AuthorScreen({author, initialPosts, headers, footers}) {
 
                 {/* title */}
                 <div className="category-title author-title">
-                  <h2>Author's articles</h2>
+                  <h2>{"Author's articles"}</h2>
                   <div className="underline"></div>
                 </div>
 
@@ -54,7 +54,7 @@ function AuthorScreen({author, initialPosts, headers, footers}) {
                   {/* item */}
                   {
                     authorPost?.map((item, index) => (
-                      <div className="latest-article-item author-article-item">
+                      <div key={index} className="latest-article-item author-article-item">
                         <div className="latest-article-thumb">
                           <Link href={`/blog/${item?.slug?.current}`}>
                             <img src={urlFor(item?.mainImage)} alt={item?.title} />

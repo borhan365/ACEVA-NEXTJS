@@ -109,7 +109,7 @@ function TestimonialSection() {
                       <p>Xboard - Founder</p>
                     </div>
                   </div>
-                  <p> <RiDoubleQuotesL className='quote-icon' /> The design customization is excellent even in the free plan. The chatbot works like a charm, and we couldn't be happier with ACEVA's support team. Also, the pricing is fair. <RiDoubleQuotesR className='quote-icon' />
+                  <p> <RiDoubleQuotesL className='quote-icon' />{"The design customization is excellent even in the free plan. The chatbot works like a charm, and we couldn't be happier with ACEVA's support team. Also, the pricing is fair. "}<RiDoubleQuotesR className='quote-icon' />
                   </p>
 
                   <ul className='review-wrap'>
@@ -133,7 +133,7 @@ function TestimonialSection() {
                       <p>Managing director - Daraz</p>
                     </div>
                   </div>
-                  <p> <RiDoubleQuotesL className='quote-icon' /> The automation - hands down. I use ACEVA all the time and suggest it to my clients for its ease of use and excellent support. I've not used it yet with shopping carts but I can really imagine it being awesome - will definately test it out.<RiDoubleQuotesR className='quote-icon' />
+                  <p> <RiDoubleQuotesL className='quote-icon' />{" The automation - hands down. I use ACEVA all the time and suggest it to my clients for its ease of use and excellent support. I've not used it yet with shopping carts but I can really imagine it being awesome - will definately test it out."}<RiDoubleQuotesR className='quote-icon' />
                   </p>
 
                   <ul className='review-wrap'>
@@ -181,7 +181,7 @@ function TestimonialSection() {
                       <p>Xboard - Founder</p>
                     </div>
                   </div>
-                  <p> <RiDoubleQuotesL className='quote-icon' /> The design customization is excellent even in the free plan. The chatbot works like a charm, and we couldn't be happier with ACEVA's support team. Also, the pricing is fair. <RiDoubleQuotesR className='quote-icon' />
+                  <p> <RiDoubleQuotesL className='quote-icon' /> {"The design customization is excellent even in the free plan. The chatbot works like a charm, and we couldn't be happier with ACEVA's support team. Also, the pricing is fair."} <RiDoubleQuotesR className='quote-icon' />
                   </p>
 
                   <ul className='review-wrap'>
@@ -205,7 +205,7 @@ function TestimonialSection() {
                       <p>Managing director - Daraz</p>
                     </div>
                   </div>
-                  <p> <RiDoubleQuotesL className='quote-icon' /> The automation - hands down. I use ACEVA all the time and suggest it to my clients for its ease of use and excellent support. I've not used it yet with shopping carts but I can really imagine it being awesome - will definately test it out. <RiDoubleQuotesR className='quote-icon' />
+                  <p> <RiDoubleQuotesL className='quote-icon' /> {"The automation - hands down. I use ACEVA all the time and suggest it to my clients for its ease of use and excellent support. I've not used it yet with shopping carts but I can really imagine it being awesome - will definately test it out."} <RiDoubleQuotesR className='quote-icon' />
                   </p>
 
                   <ul className='review-wrap'>

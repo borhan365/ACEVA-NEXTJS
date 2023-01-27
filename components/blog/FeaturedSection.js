@@ -18,7 +18,7 @@ function FeaturedSection({article}) {
                 {
                   article?.slice(0, 1).map((item, index) => (
                   
-                  <div className="featured-blog-left-wrap">
+                  <div key={index} className="featured-blog-left-wrap">
                     <div className="featured-blog-left-thumb">
                       <Link href={`/blog/${item?.slug.current}`}>
                         <img src={urlFor(item?.mainImage)} alt="fetatued blog left" />
@@ -57,7 +57,7 @@ function FeaturedSection({article}) {
                 {/* right */}
                 {
                   article?.slice(1,2).map((item, index) => (
-                    <div className="featured-blog-right-wrap">
+                    <div key={index} className="featured-blog-right-wrap">
                         <div className="featured-blog-right-thumb">
                           <Link href={`/blog/${item?.slug.current}`}>
                             <img src={urlFor(item.mainImage)} alt="featured right" />

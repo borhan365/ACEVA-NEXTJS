@@ -20,7 +20,7 @@ function Footer({footers}) {
       <div className="container">
         {
           footers?.map((item, index) => (
-            <div className="footer-wrapper">
+            <div key={index} className="footer-wrapper">
 
               {/* item */}
               <div className="footer-item">

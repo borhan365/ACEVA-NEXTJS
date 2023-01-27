@@ -187,7 +187,7 @@ function Chatbot() {
 
                 {/* plain text bubble */}
                 <li className='message-bubble-agent'>
-                  <span>Hi, I'm WipData Chatbot</span>
+                  <span>{"Hi, I'm WipData Chatbot"}</span>
                   <img src={bot} alt="bot" />
                 </li>
                 {/* <div className="messageTimestamp fade-enter-done">Yesterday, 20:00</div> */}
@@ -363,7 +363,7 @@ function Chatbot() {
 
                 {/* message by agent */}
                 <li className="message-bubble-agent">
-                  <span>Ok I'm transferning to Anna.</span>
+                  <span>{"Ok I'm transferning to Anna."}</span>
                 </li>
 
                 {/* message by agent */}

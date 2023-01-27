@@ -17,7 +17,7 @@ function LatestArticleSection({article}) {
             {/* item */}
             {
               article?.slice(2, 10).map((item, index) => (
-                <div className="latest-article-item">
+                <div key={index} className="latest-article-item">
                 <div className="latest-article-thumb">
                   <Link href={`/blog/${item?.slug.current}`}>
                     <img src={urlFor(item?.mainImage)} alt="fetatued blog left" />
