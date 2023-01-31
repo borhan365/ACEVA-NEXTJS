@@ -162,6 +162,15 @@
     grid-gap: unset;
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px;
+  }
+  .demon-btn {
+    width: max-content !important;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .cubespinner div{
+    width: 100%;
   }
   nav ul.navbar-wrappper li {
     transition: all 0.3s ease-in-out;

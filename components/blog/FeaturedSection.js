@@ -1,12 +1,12 @@
+import moment from 'moment'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { IoTimeOutline } from 'react-icons/io5'
 import { urlFor } from '../../lib/client'
-import moment from 'moment'
-import Image from 'next/image'
 
 function FeaturedSection({article}) {
-  // console.log("article", article)
+
   return (
     <>
       <section className="featured-blog-section">
@@ -22,7 +22,7 @@ function FeaturedSection({article}) {
                   <div key={index} className="featured-blog-left-wrap">
                     <div className="featured-blog-left-thumb">
                       <Link href={`/blog/${item?.slug.current}`}>
-                        <Image fill src={urlFor(item?.mainImage)} alt="fetatued blog left" />
+                        <img src={urlFor(item?.mainImage)} alt={item?.title} />
                       </Link>
                     </div>
                     <div className="featured-blog-left-content">
@@ -35,14 +35,12 @@ function FeaturedSection({article}) {
                       <div className="featured-blog-left-excerpt">
 
                         {/* author */}
-                        <div className="featured-blog-left-excerpt-author">
+                        {/* <div className="featured-blog-left-excerpt-author">
                             <div className="fetured-blog-left-author-thumb">
-                              <Link href="/author/84973">
-                                <Image fill src={urlFor(item?.author?.image)} alt={item?.author?.name} />
+                                <img src={urlFor(item?.author?.image)} alt={item?.author?.name} />
                                 <span>{item?.author?.name}</span>
-                              </Link>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* data */}
                         <div className="featured-blog-left-excerpt-date">

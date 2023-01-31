@@ -53,23 +53,23 @@ function Footer({footers}) {
                   <h3>Company Details</h3>
                 </div>
                 <div className="footer-item-list">
-                  {item?.footerCompanyDetails?.map((cDetails, cIndex) => (
+                  {/* {item?.footerCompanyDetails?.map((cDetails, cIndex) => (
                     <BlockContent blocks={cDetails} key={cIndex} />
-                  ))}
-                  {/* <ul>
+                  ))} */}
+                  <ul>
                     <li>
                       <Link href="/page/about-us"> About Us </Link>
                     </li>
                     <li>
-                      <Link href="/page/about-us"> Contact Us </Link>
+                      <Link href="/page/contact-us"> Contact Us </Link>
                     </li>
                     <li>
-                      <Link href="/page/about-us"> Privacy Policy </Link>
+                      <Link href="/page/privacy-policy"> Privacy Policy </Link>
                     </li>
                     <li>
-                      <Link href="/page/about-us"> Terms & Conditions </Link>
+                      <Link href="/page/terms-and-conditions"> Terms & Conditions </Link>
                     </li>
-                  </ul> */}
+                  </ul>
                 </div>
               </div>
 

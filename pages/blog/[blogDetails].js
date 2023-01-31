@@ -30,10 +30,10 @@ function BlogDetails({post, headers, footers}) {
             <div className="blog-details-wrapper">
 
               {/* category */}
-              <div className="blog-details-category-wrap">
+              {/* <div className="blog-details-category-wrap">
                 <li className='category-badge'><Link href="/category/423434">AI</Link></li>
                 <li className='category-badge'><Link href="/category/423434">Machine Learning</Link></li>
-              </div>
+              </div> */}
 
               {/* title */}
               <div className="blog-details-title">
@@ -71,7 +71,7 @@ function BlogDetails({post, headers, footers}) {
               </div>
 
               {/* related articles */}
-              <RelatedArticleSection />
+              {/* <RelatedArticleSection /> */}
             </div>
           </div>
         </section>
