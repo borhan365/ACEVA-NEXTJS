@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { BsFacebook, BsLinkedin, BsTwitter } from 'react-icons/bs'
@@ -25,7 +26,7 @@ function AuthorScreen({author, initialPosts, headers, footers}) {
               {/* author sidebar */}
               <div className="author-sidebar">
                 <div className="author-thumb">
-                  <img src={urlFor(author?.image)} alt={author?.name} />
+                  <Image fill src={urlFor(author?.image)} alt={author?.name} />
                 </div>
                 <div className="author-excerpt">
                   <h2>{author?.name}</h2>
@@ -57,7 +58,7 @@ function AuthorScreen({author, initialPosts, headers, footers}) {
                       <div key={index} className="latest-article-item author-article-item">
                         <div className="latest-article-thumb">
                           <Link href={`/blog/${item?.slug?.current}`}>
-                            <img src={urlFor(item?.mainImage)} alt={item?.title} />
+                            <Image fill src={urlFor(item?.mainImage)} alt={item?.title} />
                           </Link>
                           <div className="blog-category">
                             <p>Machine Learning</p>

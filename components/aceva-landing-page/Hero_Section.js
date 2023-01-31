@@ -63,6 +63,7 @@ function Hero_Section() {
               */}
               <Image 
                 src={HeroGif} 
+                loader={() => HeroGif}
                 alt="robot"
                 fill
               /> 
