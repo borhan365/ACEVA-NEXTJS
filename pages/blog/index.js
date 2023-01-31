@@ -17,7 +17,7 @@ function BlogScreen({initialPosts, footers, headers}) {
     {/* <Header headers={headers} /> */}
       <Layout headers={headers} footers={footers} >
         <FeaturedSection article={initialPosts} />
-        <LatestArticleSection article={initialPosts} />
+        {/* <LatestArticleSection article={initialPosts} /> */}
       </Layout>
       {/* <BodyFeaturedSection /> */}
       {/* <LatestArticleSection /> */}

@@ -19,8 +19,6 @@ import Layout from '../components/Layout'
 
 function AcevaScreen({headers, footers}) {
 
-  console.log("form home page", headers, footers)
-
   return (
     <>
       {/* <Header /> */}
