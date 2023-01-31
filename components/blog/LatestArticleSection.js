@@ -22,14 +22,14 @@ function LatestArticleSection({article}) {
                   <Link href={`/blog/${item?.slug.current}`}>
                     <img src={urlFor(item?.mainImage)} alt="fetatued blog left" />
                   </Link>
-                  <div className="blog-category">
+                  {/* <div className="blog-category">
                     <p>Machine Learning</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="latest-article-content">
                   <Link href={`/blog/${item?.slug.current}`}>
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
+                    <h2>{item?.title}</h2>
+                    <p>{item?.description?.substring(0, 130)}...</p>
                   </Link>
                 </div>
               </div>

@@ -11,20 +11,16 @@ const pageCover = 'https://www.kemarautomation.in/wp-content/uploads/2015/12/con
 
 function PageDetailsScreen({page, footers, headers}) {
 
-  console.log(page)
-
-  const myLoader=({src})=>{
-    return `https://www.kemarautomation.in/wp-content/uploads/2015/12/contact-us-banner.jpg`;
-  }
+  console.log("page details", page)
 
   const router = useRouter()
   const {pageDetails} = router.query
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  },[pageDetails])
+  // },[pageDetails])
   
-  console.log(pageDetails)
+  console.log("pageDetails", pageDetails)
 
   return (
     <>
@@ -115,7 +111,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { pageDetails }}) {
-  console.log(pageDetails)
   const query = `*[_type == "page" && slug.current == '${pageDetails}'][0]`;
 
   const page = await client.fetch(query);

@@ -53,7 +53,7 @@ function Header({headers}) {
           <div className="mobile-header-right">
             {/* action button */}
             <div className="mobile-action-btn desktop-hide">
-              <Link href="/demo"> Get free trail </Link>
+              <Link href="/demo"> Demo </Link>
             </div>
 
             {/* mobile burger menu */}
