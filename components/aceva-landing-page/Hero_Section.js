@@ -40,7 +40,7 @@ function Hero_Section() {
                 </h1>
                 {/* <span className='highlight-text'>Chatbot Business</span> */}
                 
-                <p>ACEVA is a smart bot that handles your communications, automate you business processes while notify you real-time.</p>
+                <p>ACEVA is a smart bot that handles your communications, automates your business processes and notifies you real-time.</p>
                 <div className='hero-buttons hero_buttons'>
                   <Link href='/demo'>
                     <button className='btn hero-service-button'>Get a Demo</button>
