@@ -153,6 +153,7 @@ h6 {
 /* home page */
 .chatbot-section {
   position: relative;
+  display: none;
 }
 .chatbot-widget-wrapper {
   position: fixed;
