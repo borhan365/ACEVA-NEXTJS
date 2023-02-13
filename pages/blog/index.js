@@ -8,7 +8,7 @@ import {loadData} from '../api/post'
 import { client } from '../../lib/client'
 import Layout from '../../components/Layout'
 
-const LOAD_MORE_STEP = 4
+const LOAD_MORE_STEP = 30
 
 function BlogScreen({initialPosts, footers, headers}) {
    

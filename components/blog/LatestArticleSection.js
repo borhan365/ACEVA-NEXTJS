@@ -16,7 +16,7 @@ function LatestArticleSection({article}) {
 
             {/* item */}
             {
-              article?.slice(2, 10).map((item, index) => (
+              article?.slice(2, 30).map((item, index) => (
                 <div key={index} className="latest-article-item">
                 <div className="latest-article-thumb">
                   <Link href={`/blog/${item?.slug.current}`}>
