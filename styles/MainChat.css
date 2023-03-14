@@ -4202,7 +4202,9 @@ h3.plan-name {
 .swiper-button-prev:after {
   font-size: 15px !important;
 }
-
+.threex-badge {
+  color: #30BD24;
+}
 /* @media screen and (min-width: 576px) {
   .swiper-container {
     width: 576px;
@@ -4214,3 +4216,4 @@ h3.plan-name {
     width: 768px;
   }
 } */
+

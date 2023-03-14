@@ -21,7 +21,7 @@ function Hero_Section() {
             <div className='hero-col-6 hero_col_6'>
               <div className='hero-content-wrap hero_content_wrap'>
                 {/* <span className="sm-title">ACEVA</span> */}
-                <h1>Looking to triple your
+                <h1>Looking to <span className='threex-badge'>3x</span> your
 
                   <div  className="home">
                     <h3 id="resizing-h3" className="" >
@@ -31,7 +31,6 @@ function Hero_Section() {
                             <div className="face face1">Business</div>
                             <div className="face face4">Sales</div>
                             <div className="face face2">Process</div>
-                            <div className="face face3">Service</div>
                           </div>
                         </div>
                       </span>

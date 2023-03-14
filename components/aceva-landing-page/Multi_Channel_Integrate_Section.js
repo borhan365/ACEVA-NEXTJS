@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 const HeroGif = '../../assets/video/hero-gif.gif'
+const illustration = '../../assets/images/bg/illustration-1.png'
+const multiLang = '../../assets/images/bg/illustration-1.png'
 // const ColumnBg = '../../images/bg/illustration-1.png'
 // const ColumnBg = '../../assets/images/bg/illustration-1.png'
 
@@ -14,7 +16,7 @@ function Multi_Channel_Integration_Section() {
             {/* thumb */}
             <div className='column_thumb col_6'>
               <Image 
-                src='/assets/images/bg/illustration-1.png' 
+                src='/assets/images/bg/multi-lang.png' 
                 objectFit='contain'
                 fill
                 alt="robot" /> 
