@@ -17,10 +17,10 @@ function Column_Section() {
             {/* content */}
             <div className='col_6'>
               <div className='column_content_wrap'>
-                <h2>Intuitive conversational with Artificial Intelligence</h2>
+                <h2>Product recommendation</h2>
                 
-                <p>Use AI powered engine to answer queries in more natural and human-like conversations. </p>
-                <p>Make it easier to communicate with systems in a way that feels familiar and intuitive. These AI-powered conversation tools can help businesses improve the user experience and automate tasks such as customer service and data entry.</p>
+                <p>Enhance the customer experience by providing timely and personalized recommendations. </p>
+                <p>Allows businesses to provide a more efficient and personalized customer experience, which can lead to increased customer loyalty and higher customer lifetime value.</p>
                 {/* <div className='column_buttons'>
                   <a href='/admin'>
                     <button className='btn column_content_btn'>See it in action</button>
