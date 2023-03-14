@@ -1,5 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
+
+import { Navigation } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from "swiper/react"
 const logoOne = '/assets/images/brands/forbes.svg'
 const WhatsApp = '/assets/images/social-media/whatsapp-2.png'
 const Telegram = '/assets/images/social-media/telegram.png'
@@ -32,30 +38,62 @@ function Integrate_Brand_Section() {
                 </div>
               </div>
 
-              {/* all logo wrapper */}
-              <div className="int-brand-all-wrapper">
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={infor} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={oracle} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={sap} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={robocrop} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={sage} alt="" />
-                </div>
-                <div className="int-brand-all-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={salesforce} alt="" />
-                </div>
+              <div className='integrate-brand-wrapper' style={{width:'100%'}}>
+                  <Swiper
+                  slidesPerView={7}
+                  spaceBetween={5}
+                  slidesPerGroup={1}
+                  centeredSlides={true}
+                  loop={true}
+                  loopFillGroupWithBlank={false}
+                  navigation={true}
+                  modules={[Navigation]}
+                  className="chatbot-swiper-container"
+        
+                >
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={infor} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={oracle} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sap} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={robocrop} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sage} alt="" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={salesforce} alt="" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
+
             </div>
           </div>
         </div>

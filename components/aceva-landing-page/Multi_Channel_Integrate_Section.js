@@ -23,10 +23,10 @@ function Multi_Channel_Integration_Section() {
             {/* content */}
             <div className='col_6'>
               <div className='column_content_wrap'>
-                <h2>Multi-channel integration</h2>
+                <h2>Multi-lingual support</h2>
                 
-                <p>Easy integration with any system and platform. It can help businesses improve their customer experience, reduce response time, and increase overall efficiency in managing customer interactions.</p>
-                <p> Gives a quick and easy access to your application with only a few clicks.</p>
+                <p>Allows businesses to reach a broader audience, improve communication and make products more accessible.</p>
+                <p> Multi-lingual support can provide an opportunity to upsell or cross-sell products, increase customer loyalty, generate more revenue, and achieve their growth objectives.</p>
                 {/* <div className='column_buttons'>
                   <a href='/admin'>
                     <button className='btn column_content_btn'>See it in action</button>

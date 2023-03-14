@@ -23,34 +23,34 @@ function Why_Choose_Section() {
 
           {/* item */}
           <div className="integrate_item why_choose_item">
-            <div className="int_thumb">
+            {/* <div className="int_thumb">
               <Image width={200} height={200} style={{objectFit: "contain"}} src={readytogo} alt="" />
-            </div>
+            </div> */}
             <div className="int_content">
-              <h3>Process Automation</h3>
-              <p>Automate business processes with a click of a button. With RPA technology, you can customize automation process easily with chatbot.</p>
+              <h3 className='int-one'>75%</h3>
+              <p>Improve customer engagement</p>
             </div>
           </div>
 
           {/* item */}
           <div className="integrate_item why_choose_item">
-            <div className="int_thumb">
+            {/* <div className="int_thumb">
               <Image width={200} height={200} style={{objectFit: "contain"}} src={bestClass} alt="" />
-            </div>
+            </div> */}
             <div className="int_content">
-              <h3>Analytics</h3>
-              <p>Real-time notification with business insights. ACEVA unified all the information in a single dashboard.</p>
+              <h3 className='int-two'>3X</h3>
+              <p>increase in sales</p>
             </div>
           </div>
 
           {/* item */}
           <div className="integrate_item why_choose_item">
-            <div className="int_thumb">
+            {/* <div className="int_thumb">
               <Image width={200} height={200} style={{objectFit: "contain"}} src={acevaBg} alt="" />
-            </div>
+            </div> */}
             <div className="int_content">
-              <h3>Best class AI</h3>
-              <p>Natural Language Processing (NLP) and Artificial Intelligent (AI) combine together to give you the best and streamline experience.</p>
+              <h3 className='int-three'>45%</h3>
+              <p>Increase in repeated purchase</p>
             </div>
           </div>
 
