@@ -40,16 +40,32 @@ function Integrate_Brand_Section() {
 
               <div className='integrate-brand-wrapper' style={{width:'100%'}}>
                   <Swiper
-                  slidesPerView={7}
-                  spaceBetween={5}
+                  // slidesPerView={7}
+                  // spaceBetween={5}
                   slidesPerGroup={1}
-                  centeredSlides={true}
+                  // centeredSlides={true}
                   loop={true}
+                  
                   loopFillGroupWithBlank={false}
                   navigation={true}
                   modules={[Navigation]}
                   className="chatbot-swiper-container"
-        
+                  breakpoints={
+                    {
+                      0: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                      },
+                      768: {
+                        slidesPerView: 6,
+                        spaceBetween: 10,
+                      },
+                      1024: {
+                        slidesPerView: 7,
+                        spaceBetween: 10,
+                      }
+                    }
+                  }
                 >
                   <SwiperSlide>
                     <div className="int-brand-all-item">

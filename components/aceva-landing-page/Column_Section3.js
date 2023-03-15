@@ -6,7 +6,7 @@ function Column_Section3() {
   return (
     <section className='column_section'>
         <div className='container'>
-          <div className='column_row'>
+          <div className='column_row column-reverse-mobile'>
 
             {/* content */}
             <div className='col_6'>

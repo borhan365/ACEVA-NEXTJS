@@ -17,7 +17,7 @@ function Column_Section() {
             {/* content */}
             <div className='col_6'>
               <div className='column_content_wrap'>
-                <h2>Product recommendation</h2>
+                <h2>Product recommendations</h2>
                 
                 <p>Enhance the customer experience by providing timely and personalized recommendations. </p>
                 <p>Allows businesses to provide a more efficient and personalized customer experience, which can lead to increased customer loyalty and higher customer lifetime value.</p>

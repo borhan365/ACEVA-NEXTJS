@@ -757,6 +757,12 @@
   .faq-item.active {
     height: auto;
   }
+  .column-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+  .container-box{
+    padding: 20px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -73,16 +73,20 @@ function PricingScreen({headers, footers}) {
                     <ul>
                       <li> <BsCheck2 /> WhatsApp/Telegram</li>
                       <li> <BsCheck2 /> Chat Monitoring</li>
-                      <li> <BsCheck2 /> File Transfer</li>
-                      <li> <BsCheck2 /> Chat Transfer</li>
-                      <li> <BsCheck2 /> Social Media Integration</li>
-                      <li> <BsCheck2 /> Third Party Application Integration</li>
-                      <li> <BsCheck2 /> Auto Trigger Notifications</li>
-                      <li> <BsCheck2 /> Dashboard Analytics</li>
-                      <li> <BsCheck2 /> Bit 256 SSL Encryption</li>
-                      <li className='not-eligible-icon'> <BsX /> Department Management</li>
+                      <li> <BsCheck2 /> Live Chat</li>
+                      <li> <BsCheck2 /> Auto Responders</li>
+                      <li> <BsCheck2 /> CRM</li>
+                      <li> <BsCheck2 /> SMS Marketing</li>
+                      <li> <BsCheck2 /> Helpdesk</li>
+                      <li> <BsCheck2 /> Push Notifications</li>
+                      <li> <BsCheck2 /> 3rd Party Integration's</li>
+                      <li> <BsCheck2 /> Multi-site</li>
+                      <li> <BsCheck2 /> Multilingual</li>
+                      <li> <BsCheck2 /> Sales Chatbots Templates</li>
+                      <li> <BsCheck2 /> FAQ Chatbots Templates</li>
+                      <li> <BsCheck2 /> Analytics</li>
+                      <li className='not-eligible-icon'> <BsX /> AI Chatbot</li>
                       {/* <li className='not-eligible-icon'> <BsX /> Auto Triggers</li> */}
-                      <li className='not-eligible-icon'> <BsX /> Proactive Chat</li>
                     </ul>
                   </div>
                   {/* <button className='pricing-buy-button'>Enquire Now</button> */}
@@ -118,15 +122,19 @@ function PricingScreen({headers, footers}) {
                       <ul>
                         <li> <BsCheck2 /> WhatsApp/Telegram</li>
                         <li> <BsCheck2 /> Chat Monitoring</li>
-                        <li> <BsCheck2 /> File Transfer</li>
-                        <li> <BsCheck2 /> Chat Transfer</li>
-                        <li> <BsCheck2 /> Social Media Integration</li>
-                        <li> <BsCheck2 /> Third Party Application Integration</li>
-                        <li> <BsCheck2 /> Auto Trigger Notifications</li>
-                        <li> <BsCheck2 /> Dashboard Analytics</li>
-                        <li> <BsCheck2 /> Bit 256 SSL Encryption</li>
-                        <li> <BsCheck2 /> Department Management</li>
-                        <li> <BsCheck2 /> Proactive Chat</li>
+                        <li> <BsCheck2 /> Live Chat</li>
+                        <li> <BsCheck2 /> Auto Responders</li>
+                        <li> <BsCheck2 /> CRM</li>
+                        <li> <BsCheck2 /> SMS Marketing</li>
+                        <li> <BsCheck2 /> Helpdesk</li>
+                        <li> <BsCheck2 /> Push Notifications</li>
+                        <li> <BsCheck2 /> 3rd Party Integration's</li>
+                        <li> <BsCheck2 /> Multi-site</li>
+                        <li> <BsCheck2 /> Multilingual</li>
+                        <li> <BsCheck2 /> Sales Chatbots Templates</li>
+                        <li> <BsCheck2 /> FAQ Chatbots Templates</li>
+                        <li> <BsCheck2 /> Analytics</li>
+                        <li> <BsCheck2 /> AI Chatbot</li>
                       </ul>
                     </div>
                     {/* <button className='pricing-buy-button'>Enquire Now</button> */}
