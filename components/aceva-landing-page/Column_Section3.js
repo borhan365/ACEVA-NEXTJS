@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-const ColumnBg = '/assets/images/bg/realtime-notification.webp'
+const ColumnBg = '/assets/images/bg/chat.png'
 
 function Column_Section3() {
   return (
