@@ -30,7 +30,6 @@ function Hero_Section() {
                           <div className="cubespinner">
                             <div className="face face1">Business</div>
                             <div className="face face4">Sales</div>
-                            <div className="face face2">Process</div>
                           </div>
                         </div>
                       </span>

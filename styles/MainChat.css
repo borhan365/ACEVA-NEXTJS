@@ -2635,10 +2635,9 @@ section.dashboard-section {
 .discriptive {
   font-size: 16px;
   color: var(--paragraphColor);
-  margin-top: 40px;
 }
 .price {
-  font-size: 45px;
+  font-size: 17px;
   line-height: 1;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -2646,6 +2645,7 @@ section.dashboard-section {
   color: var(--brand-blue);
   font-family: 'Montserrat';
   font-weight: bold;
+  margin-top: 50px;
 }
 .plan-det {
   font-size: 16px;
@@ -3585,13 +3585,13 @@ section.dashboard-section {
   font-size: 50px;
 }
 .int_content .int-one {
-  color: #9c27b0;
+  color: #004AAD;
 }
 .int_content .int-two {
-  color: green;
+  color: #48CA7D;
 }
 .int_content .int-three {
-  color: var(--darkGreenColor);
+  color: #5CE1E6;
 }
 .int_content p {
   font-size: 13px;
@@ -4047,7 +4047,7 @@ h3.plan-name {
   text-align: center;
   font-weight: 600;
   position: absolute;
-  top: -100px;
+  top: -110px;
   border-radius: 8px;
   background-image: url(https://www.haptik.ai/hubfs/pink-pentagon.svg);
   background-repeat: no-repeat;
@@ -4204,6 +4204,7 @@ h3.plan-name {
 }
 .threex-badge {
   color: #30BD24;
+  font-size: 50px;
 }
 /* @media screen and (min-width: 576px) {
   .swiper-container {

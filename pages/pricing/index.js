@@ -58,34 +58,33 @@ function PricingScreen({headers, footers}) {
                   </div> */}
                   <div className="text-center border-bottom">
                     <h3 className="plan-name">Standard</h3>
+                    <div className="price"> 250 MYR / Month </div>
                     <div className="discriptive">Perfect for Small Businesses</div>
                     <Link href="/demo?plan=standard"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
-                    {/* <div className="price">
-                      <span className="notranslate">
-                        <span>$</span>
-                        <span className="livechat-adv-numb">20</span>
-                        <span className="regular-price"><sub>$220</sub></span>
-                      </span>
-                    </div>
-                    <div className="plan-det">Per Agent/Month</div> */}
                   </div>
                   <div className="pricing-features">
                     <ul>
-                      <li> <BsCheck2 /> WhatsApp/Telegram</li>
+                      <li> <BsCheck2 /> 3 Team Members</li>
+                      <li> <BsCheck2 /> Multichannel</li>
                       <li> <BsCheck2 /> Chat Monitoring</li>
-                      <li> <BsCheck2 /> Live Chat</li>
-                      <li> <BsCheck2 /> Auto Responders</li>
-                      <li> <BsCheck2 /> CRM</li>
+                      <li> <BsCheck2 /> Autoresponders</li>
                       <li> <BsCheck2 /> SMS Marketing</li>
                       <li> <BsCheck2 /> Helpdesk</li>
                       <li> <BsCheck2 /> Push Notifications</li>
+<<<<<<< HEAD
                       <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
                       <li> <BsCheck2 /> Multi-site</li>
                       <li> <BsCheck2 /> Multilingual</li>
                       <li> <BsCheck2 /> Sales Chatbots Templates</li>
                       <li> <BsCheck2 /> FAQ Chatbots Templates</li>
+=======
+                      <li> <BsCheck2 /> 3rd Party Integration's</li>
+                      <li> <BsCheck2 /> Multi language</li>
+>>>>>>> 6aeacad013586e2efc4de1c47e56c9739ad4e0a7
                       <li> <BsCheck2 /> Analytics</li>
+                      <li> <BsCheck2 /> Technical Support</li>
                       <li className='not-eligible-icon'> <BsX /> AI Chatbot</li>
+                      <li className='not-eligible-icon'> <BsX /> Live Chat</li>
                       {/* <li className='not-eligible-icon'> <BsX /> Auto Triggers</li> */}
                     </ul>
                   </div>
@@ -106,6 +105,7 @@ function PricingScreen({headers, footers}) {
                     </div> */}
                     <div className="text-center border-bottom">
                       <h3 className="plan-name">Advanced</h3>
+                      <div className="price">500 MYR / Month</div>
                       <div className="discriptive">Ideal for Growing Businesses</div>
                       <Link href="/demo?plan=advanced"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                       {/* <div className="price">
@@ -120,21 +120,19 @@ function PricingScreen({headers, footers}) {
                     </div>
                     <div className="pricing-features">
                       <ul>
-                        <li> <BsCheck2 /> WhatsApp/Telegram</li>
+                        <li> <BsCheck2 /> 6 Team Members</li>
+                        <li> <BsCheck2 /> Multichannel</li>
                         <li> <BsCheck2 /> Chat Monitoring</li>
-                        <li> <BsCheck2 /> Live Chat</li>
-                        <li> <BsCheck2 /> Auto Responders</li>
-                        <li> <BsCheck2 /> CRM</li>
+                        <li> <BsCheck2 /> Autoresponders</li>
                         <li> <BsCheck2 /> SMS Marketing</li>
                         <li> <BsCheck2 /> Helpdesk</li>
                         <li> <BsCheck2 /> Push Notifications</li>
-                        <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
-                        <li> <BsCheck2 /> Multi-site</li>
-                        <li> <BsCheck2 /> Multilingual</li>
-                        <li> <BsCheck2 /> Sales Chatbots Templates</li>
-                        <li> <BsCheck2 /> FAQ Chatbots Templates</li>
+                        <li> <BsCheck2 /> 3rd Party Integration's</li>
+                        <li> <BsCheck2 /> Multi language</li>
                         <li> <BsCheck2 /> Analytics</li>
+                        <li> <BsCheck2 /> Technical Support</li>
                         <li> <BsCheck2 /> AI Chatbot</li>
+                        <li> <BsCheck2 /> Live Chat</li>
                       </ul>
                     </div>
                     {/* <button className='pricing-buy-button'>Enquire Now</button> */}
@@ -154,6 +152,7 @@ function PricingScreen({headers, footers}) {
                       </div> */}
                       <div className="text-center border-bottom">
                         <h3 className="plan-name">Enterprise</h3>
+                      <div className="price"></div>
                         <div className="discriptive">Best for Enterprise Teams</div>
                         <Link href="/demo?plan=enterprise"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                         {/* <div className="price">

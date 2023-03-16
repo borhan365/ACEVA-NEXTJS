@@ -29,14 +29,14 @@ function Integrate_Brand_Section() {
               <p>Connect ACEVA to dozens of tools and platforms in less than 5 minutes</p>
             </div>
             <div className="int-brand-wrapper">
-              <div className="int-brand-two-col-wrap">
+              {/* <div className="int-brand-two-col-wrap">
                 <div className="int-brand-col-item">
                   <Image width={200} height={200} style={{objectFit: "contain"}} src={WhatsApp} alt="w" />
                 </div>
                 <div className="int-brand-col-item">
                   <Image width={200} height={200} style={{objectFit: "contain"}} src={Telegram} alt="t" />
                 </div>
-              </div>
+              </div> */}
 
               <div className='integrate-brand-wrapper' style={{width:'100%'}}>
                   <Swiper
@@ -69,42 +69,47 @@ function Integrate_Brand_Section() {
                 >
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={Telegram} alt="telegram" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={WhatsApp} alt="whatsapp" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={infor} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={dynamic} alt="dynamic" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={oracle} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={infor} alt="infor" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sap} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={oracle} alt="oracle" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={robocrop} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sap} alt="sap" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sage} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={robocrop} alt="rocrop" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="int-brand-all-item">
-                      <Image width={200} height={200} style={{objectFit: "contain"}} src={salesforce} alt="" />
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={sage} alt="sage" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="int-brand-all-item">
+                      <Image width={200} height={200} style={{objectFit: "contain"}} src={salesforce} alt="salesforce" />
                     </div>
                   </SwiperSlide>
                 </Swiper>
