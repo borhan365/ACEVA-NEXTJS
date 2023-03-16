@@ -71,16 +71,8 @@ function PricingScreen({headers, footers}) {
                       <li> <BsCheck2 /> SMS Marketing</li>
                       <li> <BsCheck2 /> Helpdesk</li>
                       <li> <BsCheck2 /> Push Notifications</li>
-<<<<<<< HEAD
                       <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
-                      <li> <BsCheck2 /> Multi-site</li>
-                      <li> <BsCheck2 /> Multilingual</li>
-                      <li> <BsCheck2 /> Sales Chatbots Templates</li>
-                      <li> <BsCheck2 /> FAQ Chatbots Templates</li>
-=======
-                      <li> <BsCheck2 /> 3rd Party Integration's</li>
                       <li> <BsCheck2 /> Multi language</li>
->>>>>>> 6aeacad013586e2efc4de1c47e56c9739ad4e0a7
                       <li> <BsCheck2 /> Analytics</li>
                       <li> <BsCheck2 /> Technical Support</li>
                       <li className='not-eligible-icon'> <BsX /> AI Chatbot</li>
@@ -127,7 +119,7 @@ function PricingScreen({headers, footers}) {
                         <li> <BsCheck2 /> SMS Marketing</li>
                         <li> <BsCheck2 /> Helpdesk</li>
                         <li> <BsCheck2 /> Push Notifications</li>
-                        <li> <BsCheck2 /> 3rd Party Integration's</li>
+                        <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
                         <li> <BsCheck2 /> Multi language</li>
                         <li> <BsCheck2 /> Analytics</li>
                         <li> <BsCheck2 /> Technical Support</li>
