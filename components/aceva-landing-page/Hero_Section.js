@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 const HeroGif = '/assets/video/hero-gif.gif'
 
 function Hero_Section() {
@@ -13,6 +13,7 @@ function Hero_Section() {
     });
   }
 
+  // again changed
   return (
     <>
       <section className='hero-section'>
