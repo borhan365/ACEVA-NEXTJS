@@ -71,7 +71,7 @@ function PricingScreen({headers, footers}) {
                       <li> <BsCheck2 /> SMS Marketing</li>
                       <li> <BsCheck2 /> Helpdesk</li>
                       <li> <BsCheck2 /> Push Notifications</li>
-                      <li> <BsCheck2 /> 3rd Party Integration's</li>
+                      <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
                       <li> <BsCheck2 /> Multi language</li>
                       <li> <BsCheck2 /> Analytics</li>
                       <li> <BsCheck2 /> Technical Support</li>
@@ -119,7 +119,7 @@ function PricingScreen({headers, footers}) {
                         <li> <BsCheck2 /> SMS Marketing</li>
                         <li> <BsCheck2 /> Helpdesk</li>
                         <li> <BsCheck2 /> Push Notifications</li>
-                        <li> <BsCheck2 /> 3rd Party Integration's</li>
+                        <li> <BsCheck2 /> {"3rd Party Integration's"}</li>
                         <li> <BsCheck2 /> Multi language</li>
                         <li> <BsCheck2 /> Analytics</li>
                         <li> <BsCheck2 /> Technical Support</li>
