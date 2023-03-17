@@ -1,5 +1,5 @@
 /* Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 
 /* Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
@@ -2606,6 +2606,7 @@ section.dashboard-section {
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
   min-height: 610px;
+  height: 100%;
 }
 .pricing-item:hover {
   border: 2px solid var(--brand-blue);
@@ -3644,9 +3645,21 @@ section.dashboard-section {
 /* rotating text */
 .home {
 }
-.home h3 {
+/* .big-text-wrap {
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 5px;
+  align-items: center;
+} */
+.home-big-text {
   font-size: 52px;
-  color: #009393;
+  color: #1C6FEB;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+.question-badge {
+  color: black;
 }
 .stage {
   width: auto;
@@ -4049,7 +4062,7 @@ h3.plan-name {
   position: absolute;
   top: -110px;
   border-radius: 8px;
-  background-image: url(https://www.haptik.ai/hubfs/pink-pentagon.svg);
+  background-image: url('../public/assets/images/bg/shape-one.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 72px;
@@ -4059,11 +4072,11 @@ h3.plan-name {
 }
 
 .ai-style h3.plan-name {
-  background-image: url(https://www.haptik.ai/hubfs/skyblue-pentagon.svg);
+  background-image: url('../public/assets/images/bg/shape-two.png');
 }
 
 .analysis-style h3.plan-name {
-  background-image: url(https://www.haptik.ai/hubfs/yellow-pentagonal.svg);
+  background-image: url('../public/assets/images/bg/shape-three.png');
 }
 
 .enterprice-wrap {
@@ -4218,3 +4231,6 @@ h3.plan-name {
   }
 } */
 
+.ent-badge {
+  color: #fcf6ef;
+}

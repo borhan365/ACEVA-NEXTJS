@@ -144,7 +144,7 @@ function PricingScreen({headers, footers}) {
                       </div> */}
                       <div className="text-center border-bottom">
                         <h3 className="plan-name">Enterprise</h3>
-                      <div className="price"></div>
+                      <div className="price ent-badge">.</div>
                         <div className="discriptive">Best for Enterprise Teams</div>
                         <Link href="/demo?plan=enterprise"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                         {/* <div className="price">
@@ -164,7 +164,7 @@ function PricingScreen({headers, footers}) {
                           {/* <div className="pricing-review">
                             <img src="https://www.haptik.ai/hubfs/3star.png" alt="review" />
                           </div> */}
-                          <h3>For Enterprise Customers</h3>
+                          <h3>Contact Us for a customised plan</h3>
                       </div>
                       {/* <button className='pricing-buy-button'>Enquire Now</button> */}
                   </div>

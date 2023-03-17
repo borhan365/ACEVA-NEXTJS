@@ -1,5 +1,6 @@
 import React from 'react'
 const HomeMarketing = '/assets/images/bg/desktop-screen-dashboard.png'
+const DashboardDevices = '/assets/images/bg/dashboard-devices.png'
 import Image from 'next/image'
 
 function Column_Section2() {
@@ -10,7 +11,7 @@ function Column_Section2() {
 
             {/* thumb */}
             <div className='column_thumb col_6'>
-              <Image fill objectFit='contain' src={HomeMarketing} alt="robot" /> 
+              <Image fill objectFit='contain' src={DashboardDevices} alt="robot" /> 
             </div>
 
             {/* content */}

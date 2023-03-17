@@ -29,18 +29,11 @@ function Integrate_Brand_Section() {
               <p>Connect ACEVA to dozens of tools and platforms in less than 5 minutes</p>
             </div>
             <div className="int-brand-wrapper">
-              {/* <div className="int-brand-two-col-wrap">
-                <div className="int-brand-col-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={WhatsApp} alt="w" />
-                </div>
-                <div className="int-brand-col-item">
-                  <Image width={200} height={200} style={{objectFit: "contain"}} src={Telegram} alt="t" />
-                </div>
-              </div> */}
 
               <div className='integrate-brand-wrapper' style={{width:'100%'}}>
                   <Swiper
                   // slidesPerView={7}
+                  slidesPerView="auto"
                   // spaceBetween={5}
                   slidesPerGroup={1}
                   // centeredSlides={true}

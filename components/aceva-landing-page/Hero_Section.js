@@ -24,7 +24,11 @@ function Hero_Section() {
                 {/* <span className="sm-title">ACEVA</span> */}
                 <h1>Looking to <span className='threex-badge'>3x</span> your
 
-                  <div  className="home">
+                <div className="big-text-wrap">
+                  <div className="home-big-text">Sales <span className='question-badge'>?</span></div>
+                </div>
+
+                  {/* <div  className="home">
                     <h3 id="resizing-h3" className="" >
                       <span>
                         <div className="stage">
@@ -35,7 +39,7 @@ function Hero_Section() {
                         </div>
                       </span>
                     </h3>
-                  </div>
+                  </div> */}
                 </h1>
                 {/* <span className='highlight-text'>Chatbot Business</span> */}
                 
