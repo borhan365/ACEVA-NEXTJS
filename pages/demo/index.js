@@ -20,6 +20,9 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
+  // service: service_w0z2zmq
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -120,18 +123,9 @@ function DemoScreen({footers, headers}) {
                 <form ref={form} onSubmit={sendEmail}>
                   <h2>Request a demo</h2>
 
-                  {/* first & last name */}
-                  <div className="form-row">
-
-                    {/* first name */}
-                    <div className="form-group">
-                      <input required type="text" placeholder='First name' name='first_name' />
-                    </div>
-
-                    {/* last name */}
-                    <div className="form-group">
-                      <input required type="text" placeholder='Last name' name='last_name' />
-                    </div>
+                  {/* name */}
+                  <div className="form-group">
+                    <input required type="text" placeholder='Full name' name='name' />
                   </div>
 
                   {/* companay name */}
@@ -139,19 +133,14 @@ function DemoScreen({footers, headers}) {
                     <input required type="text" placeholder='Company name' name='company_name' />
                   </div>
 
-                  {/* Job title */}
-                  <div className="form-group">
-                    <input required type="text" placeholder='Job title' name='job_title' />
-                  </div>
-
                   {/* email */}
                   <div className="form-group">
                     <input required type="email" placeholder='Email address' name='email_address' />
                   </div>
 
-                  {/* password */}
+                  {/* number */}
                   <div className="form-group">
-                    <input type="password" placeholder='Password' name='password' />
+                    <input type="number" placeholder='Mobile number' name='phone_number' />
                   </div>
 
                   {/* plan */}
