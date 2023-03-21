@@ -20,13 +20,11 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
-  // service: service_w0z2zmq
-
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_orunkvl', 'template_qysy2fg', form.current, 'FCx4j_tOGW-D-ZBze')
+    emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
       .then((result) => {
           console.log(result.text);
           setSuccess(true)
