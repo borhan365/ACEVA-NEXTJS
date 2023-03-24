@@ -37,7 +37,7 @@ function AcevaScreen({headers, footers}) {
           {/* <WhatWeDoSection /> */}
           <FaqSection />
           <NewsLetterSection />
-        <Chatbot />
+        
         </Layout>
       {/* <Footer /> */}
     </>
