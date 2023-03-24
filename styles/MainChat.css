@@ -378,9 +378,10 @@ nav ul.navbar-wrappper li:hover nav ul.navbar-wrappper li:last-child {
   right: 0px;
 }
 .chatbot-recipient-avatar img {
-  width: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: scale-down;
   background: white;
   box-shadow: var(--brand-shadow);
   border: 2px solid white;
