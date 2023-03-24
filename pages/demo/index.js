@@ -7,11 +7,13 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { client } from '../../lib/client';
+import axios from 'axios';
 
 function DemoScreen({footers, headers}) {
 
   const [success, setSuccess] = useState(false); 
   const [loading, setLoading] = useState(false); 
+  const [name, setName] = useState("")
 
   // const [searchParams, setSearchParams] = useSearchParams()
   // const que = searchParams.get('plan')
@@ -21,18 +23,43 @@ function DemoScreen({footers, headers}) {
   const router = useRouter()
 
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
-      .then((result) => {
-          console.log(result.text);
-          setSuccess(true)
-      }, (error) => {
-          console.log(error.text);
-          setSuccess(false)
-      });
+    // const formEle = document.querySelector("form");
+    // const formDatab = new FormData(formEle);
+    // fetch(
+    //   "https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec",
+    //   {
+    //     method: "POST",
+    //     body: formDatab
+    //   }
+    // )
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+
+      try {
+        const {data} = await axios.post('https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec', name)
+      } catch (error) {
+        console.log(error)
+      }
+
+    // emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //       setSuccess(true)
+    //   }, (error) => {
+    //       console.log(error.text);
+    //       setSuccess(false)
+    //   });
   };
+
+  console.log("name", name)
 
   useEffect(() => {
     if(success) {
@@ -42,7 +69,7 @@ function DemoScreen({footers, headers}) {
 
   return (
     <>
-      <Layout headers={headers} footers={footers}>
+      <Layout title="Demo" headers={headers} footers={footers}>
         <section className="demo-section">
           <div className="container">
             {success && <Loading />}
@@ -118,12 +145,12 @@ function DemoScreen({footers, headers}) {
 
               {/* form */}
               <div className="form-wrapper">
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={(e) => sendEmail(e)}>
                   <h2>Request a demo</h2>
 
                   {/* name */}
                   <div className="form-group">
-                    <input required type="text" placeholder='Full name' name='name' />
+                    <input onChange={(e) => setName(e.target.value)} required type="text" placeholder='Full name' name='name' />
                   </div>
 
                   {/* companay name */}

@@ -28,7 +28,7 @@ function PricingScreen({headers, footers}) {
 
   return (
     <>
-      <Layout headers={headers} footers={footers}>
+      <Layout title="Pricing" headers={headers} footers={footers}>
         <section className='featured-section'>
           <div className='container'>
             <div className='featured-container'>

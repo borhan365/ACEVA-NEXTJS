@@ -2,8 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { BsFacebook, BsLinkedin, BsTwitter } from 'react-icons/bs'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import Layout from '../../components/Layout'
 import { client, urlFor } from '../../lib/client'
 import { loadData } from '../api/post'
@@ -18,7 +16,7 @@ function AuthorScreen({author, initialPosts, headers, footers}) {
 
   return (
     <>
-      <Layout headers={headers} footers={footers}>
+      <Layout title={author?.name} headers={headers} footers={footers}>
         <section className="author-section">
           <div className="container">
             <div className="author-wrapper">

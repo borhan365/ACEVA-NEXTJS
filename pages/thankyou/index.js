@@ -9,7 +9,7 @@ function ThankYouScreen({headers, footers}) {
   
   return (
     <>
-      <Layout headers={headers} footers={footers}>
+      <Layout title="Thank you" headers={headers} footers={footers}>
         <div className="success-wrapper">
 
           <div className="success-content">

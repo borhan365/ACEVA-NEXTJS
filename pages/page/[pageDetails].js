@@ -24,7 +24,7 @@ function PageDetailsScreen({page, footers, headers}) {
 
   return (
     <>
-      <Layout headers={headers} footers={footers} >
+      <Layout title={page?.title} headers={headers} footers={footers} >
         <section className="blog-details-section">
           <div className="container">
             <div className="blog-details-wrapper page-details-wrapper">

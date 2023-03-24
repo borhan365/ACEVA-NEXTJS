@@ -1,13 +1,9 @@
 import BlockContent from '@sanity/block-content-to-react'
 import moment from 'moment'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import { IoTimeOutline } from 'react-icons/io5'
-import RelatedArticleSection from '../../components/blog/RelatedArticle'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import Layout from '../../components/Layout'
 import { client, urlFor } from '../../lib/client'
 
@@ -24,7 +20,7 @@ function BlogDetails({post, headers, footers}) {
   console.log(post)
   return (
     <>
-      <Layout headers={headers} footers={footers}>
+      <Layout title={post?.title} headers={headers} footers={footers}>
         <section className="blog-details-section">
           <div className="container">
             <div className="blog-details-wrapper">

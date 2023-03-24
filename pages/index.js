@@ -22,7 +22,7 @@ function AcevaScreen({headers, footers}) {
   return (
     <>
       {/* <Header /> */}
-        <Layout headers={headers} footers={footers}>
+        <Layout title="ACEVA - AI Virtual Assistant for your business" headers={headers} footers={footers}>
           <Hero_Section />
           {/* <Brand_Section /> */}
           <Multi_Channel_Integration_Section />
