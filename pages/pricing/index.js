@@ -3,10 +3,8 @@ import { BsCheck2, BsX } from 'react-icons/bs'
 
 // import images
 import axios from 'axios'
-import React, { useState } from 'react'
 import Link from 'next/link'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import React, { useState } from 'react'
 import Layout from '../../components/Layout'
 import { client } from '../../lib/client'
 
@@ -60,7 +58,7 @@ function PricingScreen({headers, footers}) {
                     <h3 className="plan-name">Standard</h3>
                     <div className="price"> 250 MYR / Month </div>
                     <div className="discriptive">Perfect for Small Businesses</div>
-                    <Link href="/demo?plan=standard"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
+                    <Link href="/demo?plan=Standard"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                   </div>
                   <div className="pricing-features">
                     <ul>
@@ -99,7 +97,7 @@ function PricingScreen({headers, footers}) {
                       <h3 className="plan-name">Advanced</h3>
                       <div className="price">500 MYR / Month</div>
                       <div className="discriptive">Ideal for Growing Businesses</div>
-                      <Link href="/demo?plan=advanced"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
+                      <Link href="/demo?plan=Advanced"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                       {/* <div className="price">
                         <span className="notranslate">
                           <span>$</span>
@@ -146,7 +144,7 @@ function PricingScreen({headers, footers}) {
                         <h3 className="plan-name">Enterprise</h3>
                       <div className="price ent-badge">.</div>
                         <div className="discriptive">Best for Enterprise Teams</div>
-                        <Link href="/demo?plan=enterprise"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
+                        <Link href="/demo?plan=Enterprise"><button className="pricing-get-demo-btn">Get a Demo</button></Link>
                         {/* <div className="price">
                           <span className="notranslate">
                             <span>$</span>

@@ -22,8 +22,8 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
-  // const {plan} = router.query
-  // console.log('plan query', plan)
+  const {plan} = router.query
+  console.log('plan query', plan)
 
 
   const sendEmail = async (e) => {
@@ -172,7 +172,7 @@ function DemoScreen({footers, headers}) {
                   </div>
 
                   {/* plan */}
-                  <input type="text" hidden name='plan' />
+                  <input type="text" value={plan} hidden name='plan' />
 
                   <div className="form-group">
                     <p>By registering, you confirm that you agree to the storing and processing of your personal data by ACEVA as described in the <Link href="/page">Privacy Statement.</Link> </p>
