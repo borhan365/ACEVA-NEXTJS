@@ -62,7 +62,8 @@ button {
   transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background: var(--blackColor) !important;
+  background: var(--blackColor);
+  transition: all 0.3s ease-in-out;
 }
 section {
   width: 100%;
@@ -158,7 +159,7 @@ h6 {
 .chatbot-widget-wrapper {
   position: fixed;
   right: 30px;
-  bottom: 90px;
+  bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -344,6 +345,9 @@ nav ul.navbar-wrappper li:hover nav ul.navbar-wrappper li:last-child {
   width: 100%;
   background: var(--secondary-bg);
   padding: 5px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
 /* for admin dashboard message header */
 .chatbox-header {
@@ -424,7 +428,9 @@ nav ul.navbar-wrappper li:hover nav ul.navbar-wrappper li:last-child {
   align-items: center;
   grid-gap: 3px;
 }
-
+.chatbot-widget-header-right-options img {
+  cursor: pointer;
+}
 .visitor-email {
   padding: unset !important;
   width: 100% !important;
@@ -3587,13 +3593,13 @@ section.dashboard-section {
   font-size: 50px;
 }
 .int_content .int-one {
-  color: #004AAD;
+  color: #004aad;
 }
 .int_content .int-two {
-  color: #48CA7D;
+  color: #48ca7d;
 }
 .int_content .int-three {
-  color: #5CE1E6;
+  color: #5ce1e6;
 }
 .int_content p {
   font-size: 13px;
@@ -3654,7 +3660,7 @@ section.dashboard-section {
 } */
 .home-big-text {
   font-size: 52px;
-  color: #1C6FEB;
+  color: #1c6feb;
   text-transform: uppercase;
   font-weight: 700;
   font-family: 'Montserrat';
@@ -3956,10 +3962,13 @@ section.dashboard-section {
   border-radius: 30px;
   font-size: 21px;
   font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 .demo-submit:hover {
-  background-color: var(--brand-blue);
+  background: #607d8b !important;
 }
 
 /* integration and brand section */
@@ -4221,7 +4230,7 @@ h3.plan-name {
   font-size: 15px !important;
 }
 .threex-badge {
-  color: #30BD24;
+  color: #30bd24;
   font-size: 50px;
 }
 /* @media screen and (min-width: 576px) {

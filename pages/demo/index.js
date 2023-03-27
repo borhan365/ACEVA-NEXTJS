@@ -2,9 +2,9 @@ import emailjs from '@emailjs/browser';
 import React, { useEffect, useRef, useState } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs';
 // import { useNavigate, useSearchParams } from 'react-router-dom';
-import axios from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Oval } from 'react-loader-spinner';
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { client } from '../../lib/client';
@@ -46,20 +46,28 @@ function DemoScreen({footers, headers}) {
     //     console.log(error);
     //   });
 
+      // try {
+      //   const {data} = await axios.post('https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec', name)
+      // } catch (error) {
+      //   console.log(error)
+      // }
+      
       try {
-        const {data} = await axios.post('https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec', name)
-      } catch (error) {
-        console.log(error)
-      }
-
-    emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
+      setLoading(true)
+      emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
       .then((result) => {
           console.log(result.text);
+          setLoading(false)
           setSuccess(true)
       }, (error) => {
           console.log(error.text);
           setSuccess(false)
+          setLoading(false)
       });
+      
+    } catch (error) {
+      console.log(error)
+    }
   };
 
   console.log("name", name)
@@ -68,7 +76,7 @@ function DemoScreen({footers, headers}) {
     if(success) {
       router.push('/thankyou')
     }
-  },[success])
+  },[success, loading])
 
   return (
     <>
@@ -179,7 +187,20 @@ function DemoScreen({footers, headers}) {
                   </div>
 
                   <div className="form-group">
-                    <button className="btn demo-submit" type='submit'>Submit </button>
+                    <button className="btn demo-submit" type='submit'>
+                      
+                      {loading ? 
+                        <Oval
+                          height={20}
+                          width={20}
+                          color="white"
+                          visible={true}
+                          ariaLabel='oval-loading'
+                          secondaryColor="white"
+                          strokeWidth={4}
+                          strokeWidthSecondary={4}
+                        /> : "Submit"}  
+                    </button>
                   </div>
                 </form>
               </div>

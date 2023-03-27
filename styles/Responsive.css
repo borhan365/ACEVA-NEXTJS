@@ -471,9 +471,11 @@
   header {
     grid-gap: 8px;
     padding: 5px 10px;
+    height: 65px;
   }
   .login-logo img {
     width: 75px;
+    height: 40px;
   }
   .login-logo h2 {
     font-size: 23px;
