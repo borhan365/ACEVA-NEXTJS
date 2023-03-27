@@ -212,8 +212,8 @@ function Chatbot() {
                     </div>
 
                     {/* minimize */}
-                    <div className="chatbot-widget-minimize" onClick={handleToggle}>
-                      <IoIosArrowDown />
+                    <div /*className="chatbot-widget-minimize"*/ onClick={handleToggle}>
+                      {/* <IoIosArrowDown /> */} <img src={x} style={{width:'15px', margin:'0 0 2px 5px'}} alt="x" />
                     </div>
                   </div>
                 </div>
@@ -279,8 +279,8 @@ function Chatbot() {
           </div>
 
           {/* chatbot open icon && if resize is true the hide chatbot icon */}
-          { resize ? "" : <div className='chatbot-icon' onClick={handleToggle}>
-            {toggle ? <img src={x} alt="x" /> : <BsFillChatRightTextFill />}
+          { (resize || toggle) ? "" : <div className='chatbot-icon' onClick={handleToggle}>
+            {/* {toggle ? <img src={x} alt="x" /> : } */} <BsFillChatRightTextFill />
           </div> }
           <ReactAudioPlayer
             src="/assets/mp3/message.mp3"
