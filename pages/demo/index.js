@@ -2,12 +2,12 @@ import emailjs from '@emailjs/browser';
 import React, { useEffect, useRef, useState } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs';
 // import { useNavigate, useSearchParams } from 'react-router-dom';
+import axios from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { client } from '../../lib/client';
-import axios from 'axios';
 
 function DemoScreen({footers, headers}) {
 
@@ -22,8 +22,8 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
-  const {plan} = router.query
-  console.log('plan query', plan)
+  // const {plan} = router.query
+  // console.log('plan query', plan)
 
 
   const sendEmail = async (e) => {
