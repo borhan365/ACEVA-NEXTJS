@@ -3958,6 +3958,10 @@ section.dashboard-section {
   font-weight: 400;
 }
 
+.demo-submit:hover {
+  background-color: var(--brand-blue);
+}
+
 /* integration and brand section */
 .int-brand-section {
   padding: 30px 0px;

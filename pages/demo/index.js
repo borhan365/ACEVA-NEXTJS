@@ -22,6 +22,9 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
+  const {plan} = router.query
+  console.log('plan query', plan)
+
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -49,14 +52,14 @@ function DemoScreen({footers, headers}) {
         console.log(error)
       }
 
-    // emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //       setSuccess(true)
-    //   }, (error) => {
-    //       console.log(error.text);
-    //       setSuccess(false)
-    //   });
+    emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
+      .then((result) => {
+          console.log(result.text);
+          setSuccess(true)
+      }, (error) => {
+          console.log(error.text);
+          setSuccess(false)
+      });
   };
 
   console.log("name", name)
