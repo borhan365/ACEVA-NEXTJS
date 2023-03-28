@@ -2,18 +2,24 @@ import emailjs from '@emailjs/browser';
 import React, { useEffect, useRef, useState } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs';
 // import { useNavigate, useSearchParams } from 'react-router-dom';
+import moment from 'moment';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Oval } from 'react-loader-spinner';
 import Layout from '../../components/Layout';
-import Loading from '../../components/Loading';
 import { client } from '../../lib/client';
 
 function DemoScreen({footers, headers}) {
 
   const [success, setSuccess] = useState(false); 
   const [loading, setLoading] = useState(false); 
+
   const [name, setName] = useState("")
+  const [email_address, setEmail] = useState("")
+  const [company_name, setCompany] = useState("")
+  const [phone_number, setPhone] = useState("")
+  const [plan, setPlan] = useState("")
+  const [date, setDate] = useState(moment().format("LLLL"))
 
   // const [searchParams, setSearchParams] = useSearchParams()
   // const que = searchParams.get('plan')
@@ -22,36 +28,10 @@ function DemoScreen({footers, headers}) {
   // const navigate = useNavigate()
   const router = useRouter()
 
-  const {plan} = router.query
-  console.log('plan query', plan)
-
+  const {plan:queryPlan} = router.query
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
-    // const formEle = document.querySelector("form");
-    // const formDatab = new FormData(formEle);
-    // fetch(
-    //   "https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec",
-    //   {
-    //     method: "POST",
-    //     body: formDatab
-    //   }
-    // )
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-
-      // try {
-      //   const {data} = await axios.post('https://script.google.com/macros/s/AKfycby1XeRwvhqpLb81lDmvVbhYsVvG1vuLkUzMl_NpEnmgscgdy2hRTSeukks4HQpjRBuL3Q/exec', name)
-      // } catch (error) {
-      //   console.log(error)
-      // }
-      
       try {
       setLoading(true)
       emailjs.sendForm('service_afz61tq', 'template_azgg7ca', form.current, 'UFaW8CeHmKHyt44KQ')
@@ -68,22 +48,41 @@ function DemoScreen({footers, headers}) {
     } catch (error) {
       console.log(error)
     }
+
+    // send data into google sheet
+    try {
+      fetch('/api/sheetApi', {
+        method: 'POST',
+        // body: JSON.stringify(data),
+        body: JSON.stringify({name, email_address, phone_number, company_name, plan, date}),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+    } catch (error) {
+      console.log("Google sheet append error", error)
+    }
   };
 
-  console.log("name", name)
 
   useEffect(() => {
     if(success) {
       router.push('/thankyou')
     }
-  },[success, loading])
-
+    if(queryPlan === undefined) {
+      setPlan("Not choose")
+    } else {
+      setPlan(queryPlan)
+    }
+    
+  },[success, loading, queryPlan, plan])
+  
   return (
     <>
       <Layout title="Demo" headers={headers} footers={footers}>
         <section className="demo-section">
           <div className="container">
-            {success && <Loading />}
+            {/* {success && <Loading />} */}
             <div className="demo-wrapper">
 
               {/* content */}
@@ -166,21 +165,22 @@ function DemoScreen({footers, headers}) {
 
                   {/* companay name */}
                   <div className="form-group">
-                    <input required type="text" placeholder='Company name' name='company_name' />
+                    <input required onChange={(e) => setCompany(e.target.value)} type="text" placeholder='Company name' name='company_name' />
                   </div>
 
                   {/* email */}
                   <div className="form-group">
-                    <input required type="email" placeholder='Email address' name='email_address' />
+                    <input required onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Email address' name='email_address' />
                   </div>
 
                   {/* number */}
                   <div className="form-group">
-                    <input type="number" placeholder='Mobile number' name='phone_number' />
+                    <input onChange={(e) => setPhone(e.target.value)} type="number" placeholder='Mobile number' name='phone_number' />
                   </div>
 
                   {/* plan */}
-                  <input type="text" value={plan} hidden name='plan' />
+                  <input type="text" readOnly value={plan} hidden name='plan' />
+                  <input type="text" readOnly value={date} hidden name='date' />
 
                   <div className="form-group">
                     <p>By registering, you confirm that you agree to the storing and processing of your personal data by ACEVA as described in the <Link href="/page">Privacy Statement.</Link> </p>
