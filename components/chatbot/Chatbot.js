@@ -237,7 +237,7 @@ function Chatbot() {
                       <li className="message-bubble-visitor">
                         <span>{item.user}</span>
                       </li>
-                     <li ref={chatRef} className='message-bubble-agent'>
+                     <li className='message-bubble-agent'>
                       <span>{item.bot.text}</span>
                     </li>
                   </Fragment>
@@ -253,6 +253,8 @@ function Chatbot() {
                     visible={true}
                     />
                   }
+
+                  <li ref={chatRef}></li>
               </ul>
             </div>
 
