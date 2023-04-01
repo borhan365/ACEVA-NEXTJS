@@ -11,9 +11,9 @@ function Layout({headers, footers, children, title}) {
       <Head>
         <title>{title ? title : "ACEVA - AI Virtual Assistant for your business"}</title>
       </Head>
+      <Chatbot />
       <Header headers={headers} />
       {children}
-      <Chatbot />
       <Footer footers={footers} />
     </>
   )
