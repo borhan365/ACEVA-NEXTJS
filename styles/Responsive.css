@@ -175,7 +175,7 @@
     margin-top: 10px;
     margin-left: 10px;
   }
-  .cubespinner div{
+  .cubespinner div {
     width: 100%;
   }
   nav ul.navbar-wrappper li {
@@ -286,7 +286,7 @@
     inset: 0;
   }
   ul.message-body {
-    padding-bottom: 85px;
+    padding-bottom: 100px;
     margin-top: 70px;
   }
   .chatbox-conversation ul.message-body {
@@ -769,13 +769,17 @@
   .column-reverse-mobile {
     flex-direction: column-reverse;
   }
-  .container-box{
+  .container-box {
     padding: 20px;
   }
   .chatbot-widget-header {
     position: fixed;
     top: 0px;
     z-index: 999;
+  }
+  .useref-li {
+    margin: 10px 0px !important;
+    padding: 10px 0px !important;
   }
 }
 

@@ -254,7 +254,7 @@ function Chatbot() {
                     />
                   }
 
-                  <li className='display-none' ref={chatRef}></li>
+                  <li className='useref-li' ref={chatRef}></li>
               </ul>
             </div>
 
