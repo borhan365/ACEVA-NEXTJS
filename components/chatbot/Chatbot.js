@@ -194,7 +194,7 @@ function Chatbot() {
 
                     {/* refresh icon */}
                     <div className='chatbot-widget-minimize display-block desktop-hide'>
-                      <MdRefresh />
+                      <MdRefresh onClick={() => setChat([])}/>
                     </div>
 
                     {/* resize */}
