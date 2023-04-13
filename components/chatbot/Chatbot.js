@@ -1,16 +1,13 @@
-import React, { useEffect, useState, useRef, Fragment } from 'react'
 import axios from 'axios'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 import ReactAudioPlayer from 'react-audio-player'
-import { AiOutlineDelete, AiOutlineFullscreen } from 'react-icons/ai'
+import { AiOutlineDelete } from 'react-icons/ai'
 import { BiVolumeMute } from 'react-icons/bi'
-import { BsFillChatRightTextFill, BsFillEmojiSmileFill, BsThreeDotsVertical, BsXLg } from 'react-icons/bs'
+import { BsFillChatRightTextFill } from 'react-icons/bs'
 import { FaTelegramPlane } from 'react-icons/fa'
-import { Oval, ThreeDots, Rings  } from  'react-loader-spinner'
-import { HiPlus } from 'react-icons/hi'
-import { IoIosArrowDown } from 'react-icons/io'
-import { MdAttachFile } from 'react-icons/md'
+import { MdRefresh } from 'react-icons/md'
 import { VscArchive } from 'react-icons/vsc'
-import MessageProduct from '../../components/MessageProduct'
+import { Oval, ThreeDots } from 'react-loader-spinner'
 
 const book = '../../assets/images/icons/book.png'
 const bot = '../../assets/images/icons/robot.png'
@@ -20,18 +17,7 @@ const logo = '../../assets/images/wipdata-logo.png'
 // product images
 const x = '../../assets/images/icons/x.png'
 
-const billingIcon = '../../assets/images/icons/billing.png'
-const helpIcon = '../../assets/images/icons/book.png'
-const installIcon = '../../assets/images/icons/install.png'
-const chatbotIcon = '../../assets/images/icons/robot.png'
-const settingIcon = '../../assets/images/icons/setting.png'
-const useIcon = '../../assets/images/icons/use.png'
-
 function Chatbot() {
-
-  const audioUrl = '/assets/mp3/message.mp3'
-
-  // let audio = new Audio(audioUrl)
 
   const [toggle, setToggle] = useState(false); 
   const [resize, setResize] = useState(false);
@@ -206,10 +192,15 @@ function Chatbot() {
                       {!menuToggle ? <BsThreeDotsVertical /> : <BsXLg className='cross-chatbot-dropdown' />}
                     </div> */}
 
-                    {/* resize */}
-                    <div className='chatbot-widget-minimize' onClick={handleResize}>
-                      <AiOutlineFullscreen />
+                    {/* refresh icon */}
+                    <div className='chatbot-widget-minimize display-block desktop-hide'>
+                      <MdRefresh />
                     </div>
+
+                    {/* resize */}
+                    {/* <div className='chatbot-widget-minimize' onClick={handleResize}>
+                      <AiOutlineFullscreen />
+                    </div> */}
 
                     {/* minimize */}
                     <div /*className="chatbot-widget-minimize"*/ onClick={handleToggle}>

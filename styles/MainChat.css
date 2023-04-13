@@ -4255,3 +4255,11 @@ h3.plan-name {
   margin: 0px 0px !important;
   padding: 5px 0px !important;
 }
+.display-block {
+  display: block !important;
+}
+.display-block svg {
+  font-size: 26px !important;
+  width: unset;
+  height: unset;
+}

@@ -1,8 +1,8 @@
+import Head from 'next/head'
 import React from 'react'
-import Chatbot from './chatbot/Chatbot'
 import Footer from './Footer'
 import Header from './Header'
-import Head from 'next/head'
+import Chatbot from './chatbot/Chatbot'
 
 
 function Layout({headers, footers, children, title}) {
