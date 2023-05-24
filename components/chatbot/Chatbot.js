@@ -218,7 +218,7 @@ function Chatbot() {
 
                 {/* plain text bubble */}
                 <li className='message-bubble-agent'>
-                  <span>{"Hi, I'm WipData Chatbot"}</span>
+                  <span>{"Hi, I am your AI Assistant"}</span>
                   <img src={bot} alt="bot" />
                 </li>
                 {
